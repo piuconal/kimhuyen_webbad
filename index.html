@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ridiculous Registration</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <!-- Popup + Music -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <p>This is the registration page.</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" autoplay muted loop>
+    <source src="media/bad.mp3" type="audio/mpeg" />
+  </audio>
+
+  <form id="registrationForm">
+    <h2>Create Your Account</h2>
+
+    <label>Full Name</label>
+    <input type="text" id="name" placeholder="Ex: John123 (Not real name)" />
+
+    <label>Email Address</label>
+    <input type="email" id="email" placeholder="name(at)mail(dot)com" />
+
+    <label>Gender</label>
+    <div class="gender-options">
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label>
+      <label><input type="radio" name="gender" value="other" /> Other</label>
+    </div>
+
+    <label>Country</label>
+    <select id="country">
+      <option>Choose your galaxy...</option>
+      <option>Vietnam</option>
+      <option>Zebes</option>
+      <option>USA</option>
+      <option>North Pole</option>
+    </select>
+
+    <label>Date of Birth</label>
+    <input type="date" id="dob" />
+
+    <div class="terms">
+      <input type="checkbox" id="agree" />
+      <label for="agree">I agree to the terms of confusion</label>
+    </div>
+
+
+    <button type="submit" id="submitBtn">Register</button>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
