@@ -22,7 +22,7 @@ html {
 
 form {
   width: 90%;
-  max-width: 400px;
+  max-width: 550px;
   margin: 3vh auto;
   background: rgba(255, 255, 255, 0.1);
   padding: 1rem 2rem;
@@ -35,7 +35,6 @@ label {
   display: block;
   margin-top: 0.7rem;
 }
-
 input,
 select,
 button {
@@ -46,6 +45,10 @@ button {
   border: none;
   outline: none;
   font-size: 1rem;
+}
+
+input {
+  width: 96.5%;
 }
 
 button {
@@ -143,6 +146,32 @@ button:hover {
   background-color: #0f172a;
 }
 
+.phone-select-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.phone-select-group select {
+  width: 50px;
+  height: 37px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#countrySlider {
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+#countryLabel {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -176,9 +205,12 @@ button:hover {
 
 @media screen and (max-width: 480px) {
   form {
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
+  input {
+    width: 94.5%;
+  }
   .terms {
     font-size: 0.9rem;
     padding-left: 0;
